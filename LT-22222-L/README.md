@@ -76,7 +76,7 @@
 - Use ALL caps<br>
       </h4>
 <h4>First, navigate to your Device Manager to find the COM port for your device</h4>
-<img src="images/comport.jpg" alt="Serial Port screenshot" width="700px" height="auto">
+<img src="images/comport.jpg" alt="Serial Port screenshot" width="450px" height="auto">
     <p>
     </p><h4>Open Putty. Click "Serial" under connection type and type in the COM port provided to you in Device Manager. ("COM3" in the example)</h4>
 <img src="images/putty.jpg" alt="PuTTY screenshot" width="500px" height="auto">
