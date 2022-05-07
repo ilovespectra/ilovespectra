@@ -115,7 +115,7 @@ Flow Control: XON/XOFF<br>
 <tt>"AT+CLASS=A"</tt> Enter<br><br>
 <tt>OK</tt><br><br>
 <tt>"AT+CHE?"</tt> Enter<br><br>
-      <tt>AT+CHE: Get or Set eight channels mode, Only for US915,AU915,CN470'</tt><br><br>
+      <tt>AT+CHE: Get or Set eight channels mode, Only for US915,AU915,CN470</tt><br><br>
 <tt>"AT+CHE=2"</tt> Enter<br><br>
 <tt>OK</tt>(Or After reset of the ATZ)<br><br>
 <tt>"ATZ?"</tt>Enter [To reset]<br><br>
