@@ -15,13 +15,13 @@ killing the battery in low solar environments, potentially damaging your
 battery, or costing you expensive hardware failure due to heat or moisture.</p>
     <br>
     <h4>You’ll select each device / parameter specifically, make the appropriate selection.</h4>
-    <img src="images/tempmaint.png" alt="">
-    <img src="images/temprestart.png" alt="">
-    <img src="images/humidmaint.png" alt="">
-    <img src="images/humidrestart.png" alt="">
+    <img src="images/tempmaint.png" alt="Temperature maintenance rule" width=670 height=auto>
+    <img src="images/temprestart.png" alt="Temperature restart rule" width=670 height=auto>
+    <img src="images/humidmaint.png" alt="Humidity maintenance rule" width=670 height=auto>
+    <img src="images/humidrestart.png" alt="Humidity restart rule" width=670 height=auto>
     <h4>These two are for the LT itself</h4>
-    <img src="images/batmaint.png" alt="">
-    <img src="images/batrestart.png" alt="">
+    <img src="images/batmaint.png" alt="Battery maintenance rule" width=670 height=auto>
+    <img src="images/batrestart.png" alt="Battery restart rule" width=670 height=auto>
     <h4>That’s it. Hopefully that saves you a lot of stress, a little headache, and a ton of
 money. There’s countless more rules you could come up with, be clever. The
 more sensors the better. Water detection sensor, door open/close sensor, etc…
