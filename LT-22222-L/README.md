@@ -221,7 +221,7 @@ You can close the Putty window<h3>Unplug the LT-22222-L
   <img src="images/uplinkurl.png" alt="Uplink URL" width="750px" height="auto">
   <h4>Navigate back over to Helium Console and click “Integrations” > Select your LT-22222-L > Scroll down to “Endpoint URL” and paste the “Uplink URL” you just copied from Datacake and click “Update Details”</h4>
   <img src="images/endpoint2.png" alt="Endpoint Details 2" width="750px" height="auto">
-  <h4>Click “Flows” > “+ Nodes” > Drag your device out of that menu and it'll stick to the background.</h4>
+  <h4>Click “Flows” > “+ Nodes” > Drag your device out of that menu and it'll stick to the background, do the same with your datacake integration.</h4>
   <img src="images/flows.png" alt="Flows example on Helium Console" width="600px" height="auto">
   <h4>Now connect the dots! Click to draw a line connecting the two. It should appear dotted indicating data flow. This is how your Flows board will work for all integrations. <i>It’s sexy, isn't it?</i></h4>
   <h4>Navigate back over to your Datacake dashboard and click “Downlinks” and click “Switch on all Relays”. You should receive a message that says “Downlink sent to the LNS successfully”</h4>
