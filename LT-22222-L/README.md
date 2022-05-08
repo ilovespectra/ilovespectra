@@ -150,11 +150,11 @@ Flow Control: XON/XOFF<br>
 <tt>AT+NWKID=00 00 00 00</tt><br>
 <tt>AT+FCU=0</tt><br>
 <tt>AT+FCD=0</tt><br>
-<tt>AT+CLASS=A</tt> Yours says CLASS A?<br>
+<tt>AT+CLASS=A</tt><i> Yours says CLASS A?</i><br>
 <tt>AT+NJS=0</tt><br>
 <tt>AT+RECVB=0:</tt><br>
 <tt>AT+RECV=0:</tt><br>
-<tt>AT+VER=v1.5.6 US915</tt> Yours says US915?<br>
+<tt>AT+VER=v1.5.6 US915</tt></> Yours says US915?</i><br>
 <tt>AT+CFM=0</tt><br>
 <tt>AT+CFS=0</tt><br>
 <tt>AT+SNR=0</tt><br>
@@ -166,7 +166,7 @@ Flow Control: XON/XOFF<br>
 <tt>AT+RX1WTO=83</tt><br>
 <tt>AT+RX2WTO=7</tt><br>
 <tt>AT+CHS=0</tt><br>
-<tt>AT+CHE=2</tt> Yours says 2?<br>
+<tt>AT+CHE=2</tt><i> Yours says 2?</i><br>
 <tt>903.9 904.1 904.3 904.5 904.7 904.9 905.1 905.3</tt><br>
 <tt>AT+PWORD=123456</tt><br>
 <tt>AT+MOD=1</tt><br>
