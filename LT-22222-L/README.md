@@ -280,8 +280,9 @@ You can close the Putty window<p><br><br>Unplug the LT-22222-L
   <img src="images/ufl.png" alt="Image of a ufl/ipex cable." width="550px" height="auto">
   <p><i>If your LT will be in sparse LoRaWAN coverage or indoors, highly consider running an aftermarket antenna. Any antenna that would work on your Helium miner would work on the LT, just be sure it’s in your region’s band.</i></p>
   <br>
-  <p>Now you've got this incredible tool at your fingertips, create a folder on your phone with Helium Geek and a Safari bookmark to Datacake. Whenever you're ~500 blocks behind, start keeping an eye out. If your internet has been down and needs a reboot, your miner could probably benefit from a power cycle refreshing the snapshot. So if your router is offline and unresponsive, or if your miner gets stuck, and is behind by 2000-2500 blocks or so, cowboy boot those babies! <i>Do not abuse the ability to power cycle your hardware, never do so more than once a day.</i><p>
+  <p>Now you've got this incredible tool at your fingertips, if your internet has been down and needs a reboot, your miner could probably benefit from a power cycle refreshing the snapshot. So if your router is offline and unresponsive, or if your miner gets stuck, and is behind by 2000-2500 blocks or so, cowboy boot those babies! <i>Do not abuse the ability to power cycle your hardware, never do so more than once a day.</i><p>
   <br>
+<p><i>EDIT: On May 11th, hotspots will no longer have to sync with the blockchain! </i>	&#127880; </p><br>
   <p>Thanks for sticking through this walkthrough. Hopefully it helps you, if you got stuck anywhere along the way or have any questions, I'm @tanny#7241 on Discord, and @iLoveSpectra on Twitter.</p>
   <br>
   <p>If you’re feeling grateful, my HNT wallet address is provided below:<p>
