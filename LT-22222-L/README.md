@@ -202,9 +202,9 @@ You can close the Putty window<p><br><br>Unplug the LT-22222-L
     </li>
   </ul>
   <p>Navigate to your <a href="https://app.datacake.de/" target="_blank">Datacake dashboard</a> and add the device: Select “LoRaWAN” / “Helium”</p>
-  <img src="images/datacake1.png" alt="Datacake LoRaWan Selection" width="500px" height="auto">
-  <img src="images/datacake2.png" alt="Datacake Helium Selection" width="500px" height="auto">
-  <img src="images/datacake3.png" alt="Datacake Dragino LT-22222-L Selection" width="600px" height="auto">
+  <img src="images/datacake1.png" alt="Datacake LoRaWan Selection" width="400px" height="auto">
+  <img src="images/datacake2.png" alt="Datacake Helium Selection" width="400px" height="auto">
+  <img src="images/datacake3.png" alt="Datacake Dragino LT-22222-L Selection" width="500px" height="auto">
   <p>Now navigate back over to your Helium Console and click “Integrations” > “Add Integration” > “Datacake HTTP”</p>
   <img src="images/console1.png" alt="Datacake on Helium Console" width="600px" height="auto">
   <p>Navigate back to your Datacake dashboard and click your user name in the top left corner > click “Edit Profile” > “API” > “Show Token” > Now copy that token to your clipboard.</p>
@@ -216,12 +216,12 @@ You can close the Putty window<p><br><br>Unplug the LT-22222-L
   <p>Navigate back over to Helium Console and click “Integrations” > Select your LT-22222-L > Scroll down to “Endpoint URL” and paste the “Uplink URL” you just copied from Datacake and click “Update Details”</p>
   <img src="images/endpoint2.png" alt="Endpoint Details 2" width="750px" height="auto">
   <p>Click “Flows” > “+ Nodes” > Drag your device out of that menu and it'll stick to the background, do the same with your datacake integration.</p>
-  <img src="images/flows.png" alt="Flows example on Helium Console" width="600px" height="auto">
+  <img src="images/flows.png" alt="Flows example on Helium Console" width="500px" height="auto">
   <p>Now connect the dots! Click to draw a line connecting the two. It should appear dotted indicating data flow. This is how your Flows board will work for all integrations. <i>It’s sexy, isn't it?</i></p>
   <p>Navigate back over to your Datacake dashboard and click “Downlinks” and click “Switch on all Relays”. You should receive a message that says “Downlink sent to the LNS successfully”</p>
-  <img src="images/downlink.png" alt="Downlink example on Datacake" width="600px" height="auto">
+  <img src="images/downlink.png" alt="Downlink example on Datacake" width="500px" height="auto">
   <p>Go over to Helium Console, click “Devices” > LT-22222-L > and scroll down to your “Event Log” and make sure you see a red Downlink Queued.</p>
-  <img src="images/downlink2.png" alt="Downlink example on Helium" width="600px" height="auto">
+  <img src="images/downlink2.png" alt="Downlink example on Helium" width="500px" height="auto">
   <p>It could take around 10 minutes for you to see the RO1 and RO2 lights on your LT-22222-L illuminate. If they do, you’re all done!</p>
   <p><i>If you are not getting the downlinks, the easiest thing to do will be to remove the device from Helium console, and start over. You’ve got this!</i></p>
   <h2>Relay Wiring Configuration-</h2>
