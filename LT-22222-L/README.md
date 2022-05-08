@@ -289,8 +289,8 @@ You can close the Putty window<p><br><br>Unplug the LT-22222-L
   <h4>14fjXeSHN1t9f1TJLX5zWVC1P8iVPZ2M96Ke6iFDPwjkxvK3fZq</h4>
   <img src="images/qr.png" alt="tanny donation wallet qr code" width="250px" height="auto">
   <br>
-  <p><i>Hopefully you’ve reached the end of this walkthrough for the first time without having even ordered your LT-22222-L yet. If you haven't used the Helium network by creating applications on Helium Console for LoRaWAN sensors, there's no need to start with this I/O Relay. There are countless sensors with limitless applications that allow you to nitpick every element of the physical environment, almost anywhere. The steps Using the Relay are the same for any node, just follow the bread crumbs from your makers. Every off-grid, or even every out-door enclosure period, should be equipped with a temperature/humitidy sensor. Electronics are prone to static under 30% humidity, and moisture issues over 50%. Tow that fine line and you'll extend the life of your hardware by years.</i></p>
-  <br><br><br><br><br><br><br><br>
+  <p><i>Hopefully you’ve reached the end of this walkthrough for the first time without having even ordered your LT-22222-L yet. If you haven't used the Helium network by creating applications on Helium Console for LoRaWAN sensors, there's no need to start with this I/O Relay. There are countless sensors with limitless applications that allow you to nitpick every element of the physical environment, almost anywhere. The steps <a href="https://github.com/ilovespectra/ilovespectra/tree/main/LT-22222-L#using-the-relay" target="_blank">Using the Relay</a> are the same for any node, just follow the bread crumbs from your makers. Every off-grid, or even every out-door enclosure period, should be equipped with a temperature/humitidy sensor. Electronics are prone to static under 30% humidity, and moisture issues over 50%. Tow that fine line and you'll extend the life of your hardware by years.</i></p>
+  <br><br><br><br>
   </body>
 
 </html>
