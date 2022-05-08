@@ -32,8 +32,8 @@
         Wire the node for power relay and voltage monitoring
       </li>
     </ul>
-    <h3><i>This is a 102 crash course and will be much easier for folks already orientated with Helium Console / Datacake, but the walkthrough is novice-friendly.</i></h3>
-    <img src="images/pwoa.png" alt="Electrical Warning: Yellow Triangle with Exclaimation" width="70" height="70"><h3>ALWAYS USE CAUTION WHEN WORKING WITH ELECTRICITY. NEVER PLUG WIRES DIRECTLY INTO A SOCKET, ALWAYS USE A DC ADAPTER RATED FOR YOUR DEVICE.</h3>
+    </h4>
+    <img src="images/pwoa.png" alt="Electrical Warning: Yellow Triangle with Exclaimation" width="70" height="70"><h3>ALWAYS USE CAUTION WHEN WORKING WITH ELECTRICITY. NEVER PLUG WIRES DIRECTLY INTO A SOCKET, ALWAYS USE A DC ADAPTER RATED FOR YOUR DEVICE.</h4>
     <h2>You Will Need:</h2>
     <ul>
       <li>
