@@ -23,8 +23,8 @@ battery, or costing you expensive hardware failure due to heat or moisture.</p>
     <img src="images/batmaint.png" alt="Battery maintenance rule" width=670 height=auto>
     <img src="images/batrestart.png" alt="Battery restart rule" width=670 height=auto>
     <h4>That’s it. Hopefully that saves you a lot of stress, a little headache, and a ton of
-money. There’s countless more rules you could come up with, be clever. The
-more sensors the better. Water detection sensor, door open/close sensor, etc…
+money. There are endless combinations of sensors and rules you could come up with, be clever. The
+more sensors the better. Water detection sensor, door open/close sensor, etc… 
     </h4>
   </body>
 </html>
