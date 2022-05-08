@@ -282,7 +282,7 @@ You can close the Putty window<h3>Unplug the LT-22222-L
   <p><i>Eample of a custom enclosure by @tteague: </i></p>
   <img src="images/enclosure.png" alt="Example of an enclosure for the LT by tteague." width="650px" height="auto">
   <p>The piece you'll need to upgrade the antenna is pictured below. it’s called “IPD/u.fl to N Type” You can also use the existing SMA out with an adapter. You’ll replace the pigtail on the board like a snap button on your pants, pop it off, snap it on.</p>
-  <h3>EDIT: The IPEX/u.fl cable I ordered did not fit the ufl board on the LT. The next easiest solution is to simply order an SMA adapter that matches your cable configuration. The SMA out on the LT is an SMA Female (Not reverse polarity, like on a RAK miner for example)</h3>
+  <p><i>EDIT: The IPEX/u.fl cable I ordered did not fit the ufl board on the LT. The next easiest solution is to simply order an SMA adapter that matches your cable configuration. The SMA out on the LT is an SMA Female (Not reverse polarity, like on a RAK miner for example)</i></p>
   <img src="images/ufl.png" alt="Image of a ufl/ipex cable." width="550px" height="auto">
   <p><i>If your LT will be in sparse LoRaWAN coverage or indoors, highly consider running an aftermarket antenna. Any antenna that would work on your Helium miner would work on the LT, just be sure it’s in your region’s band.</i></p>
   <br>
