@@ -154,7 +154,7 @@ Flow Control: XON/XOFF<br>
 <tt>AT+NJS=0</tt><br>
 <tt>AT+RECVB=0:</tt><br>
 <tt>AT+RECV=0:</tt><br>
-<tt>AT+VER=v1.5.6 US915</tt></> Yours says US915?</i><br>
+<tt>AT+VER=v1.5.6 US915</tt><i> Yours says US915?</i><br>
 <tt>AT+CFM=0</tt><br>
 <tt>AT+CFS=0</tt><br>
 <tt>AT+SNR=0</tt><br>
