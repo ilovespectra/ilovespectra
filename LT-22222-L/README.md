@@ -43,7 +43,7 @@
       <li>
         12v power supply, wired Hot to VIN, Neutral to GND.
       </li>
-    <p>Which wire is positive on 12v adapter?</p>
+    <br><p>Which wire is positive on 12v adapter?</p>
     <p>If the multi-colored wire is black and red, the black wire is the negative wire, while the red one is positive. If both wires are black but one has a white stripe, the positive wire <i>should</i> be the one with the white stripe, and the negative wire <i>should</i> be black. RECOMMENDED: TEST WITH VOLTMETER </p>
     <img src="images/ltpower.jpeg" alt="Power cable orientation for the LT-22222-L" width="500px" height="auto">
     <p>
