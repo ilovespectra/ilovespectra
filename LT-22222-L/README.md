@@ -185,7 +185,7 @@ Flow Control: XON/XOFF<br>
 <br>
 Pat yourself on the back, hacker. You've finished the hard part.<br>
 <br>
-You can close the Putty window<p>Unplug the LT-22222-L
+You can close the Putty window<p><br><br>Unplug the LT-22222-L
 [Vital step here, because the join uplink is sent when the device powers on.]</p>
 <br><br><h2>Using the Relay</h2>
   <ul>
