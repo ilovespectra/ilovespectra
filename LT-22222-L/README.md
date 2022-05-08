@@ -65,11 +65,6 @@
         (Node < headphone w/ quick connect > CP-2102 > PC)
       </li>
     </ul>
-      <h4>This part is finicky, follow these guidelines:<br>
- 
-- Do not hit backspace in the terminal: If you have a typo, close and start over.<br>
- 
-- Use ALL caps<br>
       </h4>
 <h4>First, navigate to your Device Manager to find the COM port for your device</h4>
 <img src="images/comport.jpg" alt="Serial Port screenshot" width="450px" height="auto">
@@ -89,7 +84,8 @@ Flow Control: XON/XOFF<br>
     <img src="images/baud.png" alt="Baud screenshot" width="500px" height="auto">
     <h4>Click "Open"</h4>
       <p><i>Below is a preview of the AT terminal. Fun fact, AT commands are called that because ATtention.</i></p>
-    <img src="images/atz.jpg" alt="Baud screenshot" width="600px" height="auto">
+    <img src="images/atz.jpg" alt="atz screenshot" width="600px" height="auto">
+    <h4><i>Do not hit backspace in the terminal. If you make a mistake, close the window and start again.</i><h4>
     <h4>The default password is "123456", when <tt>Incorrect Password</tt> appears, just type <tt>123456</tt> and hit enter.<br>
     If you get an error message, just enter the command again, and if it interrupts your commands with a Tx/Rx feed while you're typing, wait for it to stop, and enter the command again:<br>
       <br><br>Follow this dialogue carefully,<br><br>
