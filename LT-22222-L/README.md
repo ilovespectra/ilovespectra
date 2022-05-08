@@ -95,14 +95,18 @@ Flow Control: XON/XOFF<br>
       <p><i>Below is a preview of the AT terminal. Fun fact, AT commands are called that because ATtention.</i></p>
     <img src="images/atz.jpg" alt="Baud screenshot" width="600px" height="auto">
     <h4>The default password is "123456", when <tt>Incorrect Password</tt> appears, just type <tt>123456</tt> and hit enter.
-    <p>To help clarify, <tt>" "</tt> indicate a command you enter. If you get an error message, enter the command again.<br>
+    If you get an error message, enter the command again.<br>
       If it interrupts your commands with a Tx/Rx feed while you're typing,wait for it to stop, and enter the command again:<br>
       <br><br>Follow this dialogue carefully,<br><br>
     </p>
     <p>Enter the default password<br><br>
-      <tt>"123456"</tt> Enter<br><br>
+      
+      123456 
+      
 <tt>Correct Password</tt><br><br>
-<tt>"ATZ"</tt> Enter<br><br>
+      
+      ATZ
+      
 <br>
   <tt>DRAGINO XX Device</tt><br>
     <tt>Image Version: XXX…</tt><br>
@@ -110,19 +114,31 @@ Flow Control: XON/XOFF<br>
 <tt>DevEui= XX XX XX XX XX XX XX XX</tt><br>
 <tt>Enter Password to Active AT Commands</tt><br>
 <tt><i>followed by the Tx and Rx information</i></tt><br><br>
-<br><br><tt>"AT+CLASS?"</tt> Enter<br><br>
+      
+      AT+CLASS?
+      
 <tt>AT+CLASS: Get or Set the Device Class</tt><br><br>
-<tt>"AT+CLASS=A"</tt> Enter<br><br>
+      
+      AT+CLASS=A
+      
 <tt>OK</tt><br><br>
-<tt>"AT+CHE?"</tt> Enter<br><br>
-      <tt>AT+CHE: Get or Set eight channels mode, Only for US915,AU915,CN470</tt><br><br>
-<tt>"AT+CHE=2"</tt> Enter<br><br>
-      <tt>OK</tt>(Or <tt>After reset of the ATZ</tt>)<br><br>
-<tt>"ATZ?"</tt>Enter [To reset]<br><br>
+      
+      AT+CHE?
+      
+<tt>AT+CHE: Get or Set eight channels mode, Only for US915,AU915,CN470</tt><br><br>
+      
+      AT+CHE=2
+      
+<tt>OK</tt>
+      
+      ATZ?
+      
 <tt>OK</tt><br><br>
 <p>
-  <p><i>Enter this last command, and check the lines that have been indicated with a ?</i></p><br><br>
-      <tt>"AT+CFG"</tt>Enter<br><br>
+  <p><i>Enter this last command, and check the indicated lines</i></p><br><br>
+      
+      AT+CFG
+      
 <tt>Stop Tx events, Please wait for all configurations to print</tt><br>
 <tt>AT+DEUI=1234567890123…</tt><br>
 <tt>AT+DADDR=123456789012…</tt><br>
