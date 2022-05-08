@@ -276,7 +276,7 @@ You can close the Putty window<h3>Unplug the LT-22222-L
   <img src="images/relaywiring.jpeg" alt="Illustration of wiring the relay." width="650px" height="auto">
   <p>Datacake will allow you to control the Relays individually, but it’s easier to select “All On” or “All Off” from the provided Downlinks. The device sends its uplink every 10 minutes or so, you will not get an immediate response from your relay. The ON and OFF packets are different Downlinks and they should be sent one at a time. I will be updating this walkthrough with any corrections, as well as the code I’m trying to develop for a custom downlink to power cycle with a single command. Wish me luck!</p>
   <br>
-  <p>The stock antenna did not cut it in my first deployment. If you’re planning on placing your LT indoors, perhaps consider putting the LT in an outdoor enclosure instaed, or running coax to an aftermarket antenna.</p>
+  <p>The stock antenna did not cut it in my first deployment. If you were planning on placing your LT indoors, perhaps consider putting the LT in an outdoor enclosure instead, or running coax to an aftermarket antenna.</p>
   <p><i>When you do cable runs, think ‘teapot’- short, and stout. Thicker cable for antennas has better insulation against static accumulation, and thicker cable for electrical systems means less voltage drop.</i></p>
   <br>
   <p><i>Eample of a custom enclosure by @tteague: </i></p>
