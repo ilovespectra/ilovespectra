@@ -6,15 +6,13 @@
 
   <body>
     <h1>Dragino I/O Relay LT-22222-L Walkthrough</h1>
-    <h2>for US/AU915mhz</h2>
-    <h4>For remote power cycle of 1 or 2 devices
-      and voltage monitoring over LoRaWAN</h4>
-    <h5>by @tanny7241 with special thanks to @tteague#3838
-      (Updated May 7th, 2022)
-    <h5><i>Addtional folder in this repo for walkthrough to create rules for temp/humidity and battery safety using Datacake</i><h5><br><br>
-    <h4>
+    <p>for US/AU915mhz</p>
+    <p>For remote power cycle of 1 or 2 devices
+      and voltage monitoring over LoRaWAN</p>
+    <p>by @tanny7241 with special thanks to @tteague#3838 (Updated May 7th, 2022)</p>
+    <p><i>Addtional folder in this repo for walkthrough to create rules for temp/humidity and battery safety using Datacake</i><p><br><br>
       The Dragino LT-22222-L ships as a Class C device. For Helium, we need to change that to Class A. In additon, the default settings for US/AU915mhz, as well as for CN470, are to lazily scan all 72 potential channels in your region’s band, when most LoRaWAN gateways only use 8. When the device joins, the server will issue a downlink telling the device how to behave. I’ve included links to the, USB converter, driver and application you’ll need in this walkthrough to make your life a little easier.</h4><br>
-      <h2>End Goals:</h2>
+      <p>End Goals:</p>
     <ul>
       <li>
         Set the device from Class C to Class A so it can work with Helium
@@ -32,9 +30,9 @@
         Wire the node for power relay and voltage monitoring
       </li>
     </ul>
-    </h4>
-    <img src="images/pwoa.png" alt="Electrical Warning: Yellow Triangle with Exclaimation" width="70" height="70"><h3>ALWAYS USE CAUTION WHEN WORKING WITH ELECTRICITY. NEVER PLUG WIRES DIRECTLY INTO A SOCKET, ALWAYS USE A DC ADAPTER RATED FOR YOUR DEVICE.</h4>
-    <h2>You Will Need:</h2>
+    </p>
+    <img src="images/pwoa.png" alt="Electrical Warning: Yellow Triangle with Exclaimation" width="70" height="70"><p>ALWAYS USE CAUTION WHEN WORKING WITH ELECTRICITY. NEVER PLUG WIRES DIRECTLY INTO A SOCKET, ALWAYS USE A DC ADAPTER RATED FOR YOUR DEVICE.</p>
+    <p>You Will Need:</p>
     <ul>
       <li>
         The Dragino LT-22222-L, in your region's band, antenna attached
@@ -45,8 +43,8 @@
       <li>
         12v power supply, wired Hot to VIN, Neutral to GND.
       </li>
-    <h3>Which wire is positive on 12v adapter?</h3>
-    <h5>If the multi-colored wire is black and red, the black wire is the negative wire, while the red one is positive. If both wires are black but one has a white stripe, the positive wire should be the one with the white stripe, and the negative wire should be black. RECOMMENDED: TEST WITH VOLTMETER </h5>
+    <p>Which wire is positive on 12v adapter?</p>
+    <p>If the multi-colored wire is black and red, the black wire is the negative wire, while the red one is positive. If both wires are black but one has a white stripe, the positive wire <i>should</i> be the one with the white stripe, and the negative wire <i>should</i> be black. RECOMMENDED: TEST WITH VOLTMETER </p>
     <img src="images/ltpower.jpeg" alt="Power cable orientation for the LT-22222-L" width="500px" height="auto">
     <p>
     </p>
@@ -66,27 +64,27 @@
       </li>
     </ul>
       </h4>
-<h4>First, navigate to your Device Manager to find the COM port for your device</h4>
+<p>First, navigate to your Device Manager to find the COM port for your device</p>
 <img src="images/comport.jpg" alt="Serial Port screenshot" width="450px" height="auto">
     <p>
-    </p><h4>Open Putty. Click "Serial" under connection type and type in the COM port provided to you in Device Manager. ("COM3" in the example)</h4>
+    </p><p>Open Putty. Click "Serial" under connection type and type in the COM port provided to you in Device Manager. ("COM3" in the example)</p>
 <img src="images/putty.jpg" alt="PuTTY screenshot" width="500px" height="auto">
-    <h4>Click "Terminal" under "Category" and select Local Echo: "Force On"</h4>
+    <p>Click "Terminal" under "Category" and select Local Echo: "Force On"</p>
     <img src="images/echo.png" alt="Force Echo screenshot" width="500px" height="auto">
-    <h4>Click "Serial" under "Category", make sure it looks like this, it should already:<br>
+    <p>Click "Serial" under "Category", make sure it looks like this, it should already:</p><br>
 <br>
 Baud Rate :9600<br>
 Data Bits: 8<br>
 Stop Bits: 1<br>
 Parity: None<br>
 Flow Control: XON/XOFF<br>
-    </h4>
+    </p>
     <img src="images/baud.png" alt="Baud screenshot" width="500px" height="auto">
-    <h4>Click "Open"</h4>
+    <p>Click "Open"</p>
       <p><i>Below is a preview of the AT terminal. Fun fact, AT commands are called that because ATtention.</i></p>
     <img src="images/atz.jpg" alt="atz screenshot" width="600px" height="auto">
-    <h4><i>Do not hit backspace in the terminal. If you make a mistake, close the window and start again.</i><h4>
-    <h4>The default password is "123456", when <tt>Incorrect Password</tt> appears, just type <tt>123456</tt> and hit enter.<br>
+    <p><i>Do not hit backspace in the terminal. If you make a mistake, close the window and start again.</i><p>
+    <p>The default password is "123456", when <tt>Incorrect Password</tt> appears, just type <tt>123456</tt> and hit enter.<br>
     If you get an error message, just enter the command again, and if it interrupts your commands with a Tx/Rx feed while you're typing, wait for it to stop, and enter the command again:<br>
       <br><br>Follow this dialogue carefully,<br><br>
     </p>
@@ -187,8 +185,8 @@ Flow Control: XON/XOFF<br>
 <br>
 Pat yourself on the back, hacker. You've finished the hard part.<br>
 <br>
-You can close the Putty window<h3>Unplug the LT-22222-L
-[Vital step here, because the join uplink is sent when the device powers on.]</h3>
+You can close the Putty window<p>Unplug the LT-22222-L
+[Vital step here, because the join uplink is sent when the device powers on.]</p>
 <br><br><h2>Using the Relay</h2>
   <ul>
     <li>
@@ -203,32 +201,32 @@ You can close the Putty window<h3>Unplug the LT-22222-L
     <li>In a separate tab or window, go to <a href="https://datacake.co/" target="_blank">datacake.co</a>
     </li>
   </ul>
-  <h4>Navigate to your <a href="https://app.datacake.de/" target="_blank">Datacake dashboard</a> and add the device: Select “LoRaWAN” / “Helium”</h4>
+  <p>Navigate to your <a href="https://app.datacake.de/" target="_blank">Datacake dashboard</a> and add the device: Select “LoRaWAN” / “Helium”</p>
   <img src="images/datacake1.png" alt="Datacake LoRaWan Selection" width="500px" height="auto">
   <img src="images/datacake2.png" alt="Datacake Helium Selection" width="500px" height="auto">
   <img src="images/datacake3.png" alt="Datacake Dragino LT-22222-L Selection" width="600px" height="auto">
-  <h4>Now navigate back over to your Helium Console and click “Integrations” > “Add Integration” > “Datacake HTTP”</h4>
+  <p>Now navigate back over to your Helium Console and click “Integrations” > “Add Integration” > “Datacake HTTP”</p>
   <img src="images/console1.png" alt="Datacake on Helium Console" width="600px" height="auto">
-  <h4>Navigate back to your Datacake dashboard and click your user name in the top left corner > click “Edit Profile” > “API” > “Show Token” > Now copy that token to your clipboard.</h4>
+  <p>Navigate back to your Datacake dashboard and click your user name in the top left corner > click “Edit Profile” > “API” > “Show Token” > Now copy that token to your clipboard.</p>
   <img src="images/datacake5.png" alt="Datacake API Token" width="600px" height="auto">
-  <h4>and paste it to the “ENDPOINT DETAILS” in your Helium Integration</h4>
+  <p>and paste it to the “ENDPOINT DETAILS” in your Helium Integration</p>
   <img src="images/endpoint.png" alt="Endpoint Details" width="750px" height="auto">
-  <h4>Navigate back over to Datacake and click “Configuration”> Scroll down to “Network Server” and click “Change” > Scroll down to your “Uplink URL” and copy it to your clipboard.</h4>
+  <p>Navigate back over to Datacake and click “Configuration”> Scroll down to “Network Server” and click “Change” > Scroll down to your “Uplink URL” and copy it to your clipboard.</p>
   <img src="images/uplinkurl.png" alt="Uplink URL" width="750px" height="auto">
-  <h4>Navigate back over to Helium Console and click “Integrations” > Select your LT-22222-L > Scroll down to “Endpoint URL” and paste the “Uplink URL” you just copied from Datacake and click “Update Details”</h4>
+  <p>Navigate back over to Helium Console and click “Integrations” > Select your LT-22222-L > Scroll down to “Endpoint URL” and paste the “Uplink URL” you just copied from Datacake and click “Update Details”</p>
   <img src="images/endpoint2.png" alt="Endpoint Details 2" width="750px" height="auto">
-  <h4>Click “Flows” > “+ Nodes” > Drag your device out of that menu and it'll stick to the background, do the same with your datacake integration.</h4>
+  <p>Click “Flows” > “+ Nodes” > Drag your device out of that menu and it'll stick to the background, do the same with your datacake integration.</p>
   <img src="images/flows.png" alt="Flows example on Helium Console" width="600px" height="auto">
-  <h4>Now connect the dots! Click to draw a line connecting the two. It should appear dotted indicating data flow. This is how your Flows board will work for all integrations. <i>It’s sexy, isn't it?</i></h4>
-  <h4>Navigate back over to your Datacake dashboard and click “Downlinks” and click “Switch on all Relays”. You should receive a message that says “Downlink sent to the LNS successfully”</h4>
+  <p>Now connect the dots! Click to draw a line connecting the two. It should appear dotted indicating data flow. This is how your Flows board will work for all integrations. <i>It’s sexy, isn't it?</i></p>
+  <p>Navigate back over to your Datacake dashboard and click “Downlinks” and click “Switch on all Relays”. You should receive a message that says “Downlink sent to the LNS successfully”</p>
   <img src="images/downlink.png" alt="Downlink example on Datacake" width="600px" height="auto">
-  <h4>Go over to Helium Console, click “Devices” > LT-22222-L > and scroll down to your “Event Log” and make sure you see a red Downlink Queued.</h4>
+  <p>Go over to Helium Console, click “Devices” > LT-22222-L > and scroll down to your “Event Log” and make sure you see a red Downlink Queued.</p>
   <img src="images/downlink2.png" alt="Downlink example on Helium" width="600px" height="auto">
-  <h4>It could take around 10 minutes for you to see the RO1 and RO2 lights on your LT-22222-L illuminate. If they do, you’re all done!</h4>
+  <p>It could take around 10 minutes for you to see the RO1 and RO2 lights on your LT-22222-L illuminate. If they do, you’re all done!</p>
   <p><i>If you are not getting the downlinks, the easiest thing to do will be to remove the device from Helium console, and start over. You’ve got this!</i></p>
   <h2>Relay Wiring Configuration-</h2>
   <img src="images/pwoa.png" alt="Electrical Warning: Yellow Triangle with Exclaimation" width="100" height="100">
-  <h3>Note the use of a socket in this diagram is for illustrative purposes only. USE CAUTION WHEN WORKING WITH ELECTRICITY. DO NOT PLUG WIRES DIRECTLY INTO A SOCKET, ALWAYS USE A DC ADAPTER RATED FOR YOUR DEVICE.</h3>
+  <p>Note the use of a socket in this diagram is for illustrative purposes only. USE CAUTION WHEN WORKING WITH ELECTRICITY. DO NOT PLUG WIRES DIRECTLY INTO A SOCKET, ALWAYS USE A DC ADAPTER RATED FOR YOUR DEVICE.</p>
   <img src="images/config.png" alt="Electrical configuration of LT to router and hotspot." width="750px" height="auto">
   <p><i>The steps below apply specifically to the off-grid configuration provided in an https://www.iotoffgrid.com/ solar enclosure kit. The LT-22222-L can be powered directly by a 7-24v DC adapter for on-the-grid indoor and enclosure applications.</i></p>
   <img src="images/wiring.jpeg" alt="Electrical configuration of LT to router and hotspot." width="750px" height="auto">
@@ -290,7 +288,7 @@ You can close the Putty window<h3>Unplug the LT-22222-L
   <h4>14fjXeSHN1t9f1TJLX5zWVC1P8iVPZ2M96Ke6iFDPwjkxvK3fZq</h4>
   <img src="images/qr.png" alt="tanny donation wallet qr code" width="250px" height="auto">
   <br>
-  <h4><i>Hopefully you’ve reached the end of this walkthrough for the first time without having even ordered your LT-22222-L yet. If you haven't used the Helium network by creating applications on Helium Console for LoRaWAN sensors, there's no need to start with this I/O Relay. There are countless sensors with limitless applications that allow you to nitpick every element of the physical environment, almost anywhere. The steps Using the Relay are the same for any node, just follow the bread crumbs from your makers. Every off-grid, or even every out-door enclosure period, should be equipped with a temperature/humitidy sensor. Electronics are prone to static under 30% humidity, and moisture issues over 50%. Tow that fine line and you'll extend the life of your hardware by years.</i></h4>
+  <p><i>Hopefully you’ve reached the end of this walkthrough for the first time without having even ordered your LT-22222-L yet. If you haven't used the Helium network by creating applications on Helium Console for LoRaWAN sensors, there's no need to start with this I/O Relay. There are countless sensors with limitless applications that allow you to nitpick every element of the physical environment, almost anywhere. The steps Using the Relay are the same for any node, just follow the bread crumbs from your makers. Every off-grid, or even every out-door enclosure period, should be equipped with a temperature/humitidy sensor. Electronics are prone to static under 30% humidity, and moisture issues over 50%. Tow that fine line and you'll extend the life of your hardware by years.</i></p>
   <br><br><br><br><br><br><br><br>
   </body>
 
