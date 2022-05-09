@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1>Datacake Battery / Temperature /Humidity Rules for Hardware Safety</h1><br>
-    <h3>Highly Reccomended <i>Feel free to edit integers to your discretion.</i></h3>
+    <p>Highly Reccomended <i>Feel free to edit integers to your discretion.</i></p>
     <p>These rules will instruct your LT to power down your miner and router due
 to low battery or high temp/humidity, as well as turn them back on when it
 is safe to do so. The LT can operate on as ittle as 7 volts, which will keep
@@ -22,9 +22,9 @@ battery, or costing you expensive hardware failure due to heat or moisture.</p>
     <h4>These two are for the LT itself</h4>
     <img src="images/batmaint.png" alt="Battery maintenance rule" width=670 height=auto>
     <img src="images/batrestart.png" alt="Battery restart rule" width=670 height=auto>
-    <h4>That’s it. Hopefully that saves you a lot of stress, a little headache, and a ton of
+    <p>That’s it. Hopefully that saves you a lot of stress, a little headache, and a ton of
 money. There are endless combinations of sensors and rules you could come up with, be clever. The
 more sensors the better. Water detection sensor, door open/close sensor, etc… 
-    </h4>
+    </p>
   </body>
 </html>
