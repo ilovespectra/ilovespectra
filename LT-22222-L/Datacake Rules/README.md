@@ -14,7 +14,7 @@ you in control of your hardware even if the voltage is too low to power the
 killing the battery in low solar environments, potentially damaging your
 battery, or costing you expensive hardware failure due to heat or moisture.</p>
     <br>
-    <h4>You’ll select each device / parameter specifically, make the appropriate selection.</h4>
+    <p>You’ll select each device / parameter specifically, make the appropriate selection.</p>
     <img src="images/tempmaint.png" alt="Temperature maintenance rule" width=670 height=auto>
     <img src="images/temprestart.png" alt="Temperature restart rule" width=670 height=auto>
     <img src="images/humidmaint.png" alt="Humidity maintenance rule" width=670 height=auto>
