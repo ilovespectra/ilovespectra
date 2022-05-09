@@ -4,8 +4,8 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <h2>Datacake Battery / Temperature /Humidity Rules for Hardware Safety</h2><br>
-    <p>Highly Reccomended <i>Feel free to edit integers to your discretion.</i></p>
+    <h2>Datacake Battery / Temperature /Humidity Rules for Hardware Safety</h2>
+    <p><b>Highly Reccomended</b> <i>(Feel free to edit integers to your discretion.)</i></p>
     <p>These rules will instruct your LT to power down your miner and router due
 to low battery or high temp/humidity, as well as turn them back on when it
 is safe to do so. The LT can operate on as ittle as 7 volts, which will keep
