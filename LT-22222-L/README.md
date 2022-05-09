@@ -5,12 +5,11 @@
   </head>
 
   <body>
-    <h1>Dragino I/O Relay LT-22222-L Walkthrough</h1>
+    <h1><b>Dragino I/O Relay LT-22222-L Walkthrough</b></h1>
     <p>for US/AU915mhz</p>
     <p>For remote power cycle of 1 or 2 devices
       and voltage monitoring over LoRaWAN</p>
-    <p>by @tanny7241 with special thanks to @tteague#3838 (Updated May 7th, 2022)</p>
-    <p><i>Addtional folder in this repo for walkthrough to create rules for temp/humidity and battery safety using Datacake</i><p><br><br>
+    <p><i>by @tanny7241 with special thanks to @tteague#3838 [Updated May 9th, 2022]</i><br><i>(Addtional folder in this repo for walkthrough to create rules for temp/humidity and battery safety using Datacake)</i><p><br><br>
       The Dragino LT-22222-L ships as a Class C device. For Helium, we need to change that to Class A. In additon, the default settings for US/AU915mhz, as well as for CN470, are to lazily scan all 72 potential channels in your region’s band, when most LoRaWAN gateways only use 8. When the device joins, the server will issue a downlink telling the device how to behave. I’ve included links to the, USB converter, driver and application you’ll need in this walkthrough to make your life a little easier.</h4><br>
   <p><b>End Goals:</b></p>
     <ul>
