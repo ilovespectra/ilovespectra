@@ -14,7 +14,7 @@ you in control of your hardware even if the voltage is too low to power the
 killing the battery in low solar environments, potentially damaging your
 battery, or costing you expensive hardware failure due to heat or moisture.</p>
     <br>
-    <p>You’ll select each device / parameter specifically, make the appropriate selection.</p>
+    <p>The first four rules are for the temperature/humidity sensor. I'm using a <a href="https://www.dragino.com/products/temperature-humidity-sensor/item/151-lht65.html" target="_blank">Dragino LT-65.</a> and the <a href="https://www.dragino.com/products/lora-lorawan-end-node/item/156-lt-22222-l.html" target="_blank">Dragino LT-22222-L.</a> from <a href="https://github.com/ilovespectra/ilovespectra/tree/main/LT-22222-L" target="_blank">this walkthrough</a><i> You’ll select each device / parameter specifically, make the appropriate selection.</i></p>
     <img src="images/tempmaint.png" alt="Temperature maintenance rule" width=670 height=auto>
     <img src="images/temprestart.png" alt="Temperature restart rule" width=670 height=auto>
     <img src="images/humidmaint.png" alt="Humidity maintenance rule" width=670 height=auto>
