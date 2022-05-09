@@ -12,7 +12,7 @@
     <p>by @tanny7241 with special thanks to @tteague#3838 (Updated May 7th, 2022)</p>
     <p><i>Addtional folder in this repo for walkthrough to create rules for temp/humidity and battery safety using Datacake</i><p><br><br>
       The Dragino LT-22222-L ships as a Class C device. For Helium, we need to change that to Class A. In additon, the default settings for US/AU915mhz, as well as for CN470, are to lazily scan all 72 potential channels in your region’s band, when most LoRaWAN gateways only use 8. When the device joins, the server will issue a downlink telling the device how to behave. I’ve included links to the, USB converter, driver and application you’ll need in this walkthrough to make your life a little easier.</h4><br>
-      <p>End Goals:</p>
+  <p><b>End Goals:</b></p>
     <ul>
       <li>
         Set the device from Class C to Class A so it can work with Helium
@@ -32,7 +32,7 @@
     </ul>
     </p>
     <img src="images/pwoa.png" alt="Electrical Warning: Yellow Triangle with Exclaimation" width="70" height="70"><p>ALWAYS USE CAUTION WHEN WORKING WITH ELECTRICITY. NEVER PLUG WIRES DIRECTLY INTO A SOCKET, ALWAYS USE A DC ADAPTER RATED FOR YOUR DEVICE.</p>
-    <p>You Will Need:</p>
+    <p><b>You Will Need:</b></p>
     <ul>
       <li>
         The Dragino LT-22222-L, in your region's band, antenna attached
@@ -43,8 +43,8 @@
       <li>
         12v power supply, wired Hot to VIN, Neutral to GND.
       </li>
-    <br><p>Which wire is positive on 12v adapter?</p>
-    <p>If the multi-colored wire is black and red, the black wire is the negative wire, while the red one is positive. If both wires are black but one has a white stripe, the positive wire <i>should</i> be the one with the white stripe, and the negative wire <i>should</i> be black. RECOMMENDED: TEST WITH VOLTMETER </p>
+    <br><p><i>Which wire is positive on 12v adapter?</p>
+    <p>If the multi-colored wire is black and red, the black wire is the negative wire, while the red one is positive. If both wires are black but one has a white stripe, the positive wire <i>should</i> be the one with the white stripe, and the negative wire <i>should</i> be black.<br><b>RECOMMENDED: TEST WITH VOLTMETER</b></i></p>
     <img src="images/ltpower.jpeg" alt="Power cable orientation for the LT-22222-L" width="500px" height="auto">
     <p>
     </p>
@@ -86,7 +86,7 @@ Flow Control: XON/XOFF<br>
     <p><i>Do not hit backspace in the terminal. If you make a mistake, close the window and start again.</i><p>
     <p>The default password is "123456", when <tt>Incorrect Password</tt> appears, just type <tt>123456</tt> and hit enter.<br>
     If you get an error message, just enter the command again, and if it interrupts your commands with a Tx/Rx feed while you're typing, wait for it to stop, and enter the command again:<br>
-      <br><br>Follow this dialogue carefully,<br><br>
+      <br><br><b>Follow this dialogue carefully:</b><br><br>
     </p>
     <p>Enter the default password<br><br>
       
@@ -228,9 +228,9 @@ You can close the Putty window<p><br><br>Unplug the LT-22222-L
   <img src="images/pwoa.png" alt="Electrical Warning: Yellow Triangle with Exclaimation" width="100" height="100">
   <p>Note the use of a socket in this diagram is for illustrative purposes only. USE CAUTION WHEN WORKING WITH ELECTRICITY. DO NOT PLUG WIRES DIRECTLY INTO A SOCKET, ALWAYS USE A DC ADAPTER RATED FOR YOUR DEVICE.</p>
   <img src="images/config.png" alt="Electrical configuration of LT to router and hotspot." width="750px" height="auto">
-  <p><i>The steps below apply specifically to the off-grid configuration provided in an https://www.iotoffgrid.com/ solar enclosure kit. The LT-22222-L can be powered directly by a 7-24v DC adapter for on-the-grid indoor and enclosure applications.</i></p>
+  <p><i>The steps below apply specifically to the off-grid configuration provided in an <a href="https://www.iotoffgrid.com/" target="_blank">IoT Off-Grid</a>  solar enclosure kit. The LT-22222-L can be powered directly by a 7-24v DC adapter for on-the-grid indoor and enclosure applications.</i></p>
   <img src="images/wiring.jpeg" alt="Electrical configuration of LT to router and hotspot." width="750px" height="auto">
-  <p>The black wires don’t need to be cut. If they are, splice/crimp carefully.</>
+  <p><i>The black wires don’t need to be cut. If they are, splice/crimp carefully.</i></>
   <ul>
     <li>
       Power off
@@ -281,16 +281,13 @@ You can close the Putty window<p><br><br>Unplug the LT-22222-L
   <p><i>If your LT will be in sparse LoRaWAN coverage or indoors, highly consider running an aftermarket antenna. Any antenna that would work on your Helium miner would work on the LT, just be sure it’s in your region’s band.</i></p>
   <br>
   <p>Now you've got this incredible tool at your fingertips, if your internet has been down and needs a reboot, your miner could probably benefit from a power cycle refreshing the snapshot. So if your router is offline and unresponsive, or if your miner gets stuck, and is behind by 2000-2500 blocks or so, cowboy boot those babies! <i>Do not abuse the ability to power cycle your hardware, never do so more than once a day.</i><p>
-  <br>
 <p><i>EDIT: On May 11th, hotspots will no longer have to sync with the blockchain! </i>	&#127880; </p><br>
-  <p>Thanks for sticking through this walkthrough. Hopefully it helps you, if you got stuck anywhere along the way or have any questions, I'm @tanny#7241 on Discord, and @iLoveSpectra on Twitter.</p>
-  <br>
+  <p>Thanks for sticking through this walkthrough. Hopefully it helps you, if you got stuck anywhere along the way or have any questions, I'm @tanny#7241 on Discord, and @iLoveSpectra on Twitter.</p><br><br><br>
   <p>If you’re feeling grateful, my HNT wallet address is provided below:<p>
   <h4>14fjXeSHN1t9f1TJLX5zWVC1P8iVPZ2M96Ke6iFDPwjkxvK3fZq</h4>
   <img src="images/qr.png" alt="tanny donation wallet qr code" width="250px" height="auto">
-  <br>
   <p><i>Hopefully you’ve reached the end of this walkthrough for the first time without having even ordered your LT-22222-L yet. If you haven't used the Helium network by creating applications on Helium Console for LoRaWAN sensors, there's no need to start with this I/O Relay. There are countless sensors with limitless applications that allow you to nitpick every element of the physical environment, almost anywhere. The steps <a href="https://github.com/ilovespectra/ilovespectra/tree/main/LT-22222-L#using-the-relay" target="_blank">Using the Relay</a> are the same for any node, just follow the bread crumbs from your makers. Every off-grid, or even every out-door enclosure period, should be equipped with a temperature/humitidy sensor. Electronics are prone to static under 30% humidity, and moisture issues over 50%. Tow that fine line and you'll extend the life of your hardware by years.</i></p>
-  <br><br><br><br>
+  <br>
   </body>
 
 </html>
