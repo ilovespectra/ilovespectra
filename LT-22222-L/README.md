@@ -177,15 +177,13 @@ Flow Control: XON/XOFF<br>
 <tt>AT+DTRI=0,0</tt><br>
 <tt>AT+AVLIM=0,0,0,0</tt><br>
 <tt>AT+ACLIM=0,0,0,0</tt><br>
-<tt>AT+ATDC=5</tt><br><br>
+<tt>AT+ATDC=5</tt>
 <br>
 <p><i>If so, then you’re done. If any of yours look different, enter the related command again.</i></p>
-<p>Once you’re done click the computer icon in the top left corner and click "Copy all to Clipboard." Paste in a text editing app. [Delete the spaces in your Keys/EUIs to make copy and pasting them a breeze.]</p><br>
+<p>Once you’re done click the computer icon in the top left corner and click "Copy all to Clipboard." Paste in a text editing app. [Delete the spaces in your Keys/EUIs to make copy and pasting them a breeze.]</p>
 <br>
-Pat yourself on the back, hacker. You've finished the hard part.<br>
-<br>
-You can close the Putty window<p><br><br>Unplug the LT-22222-L
-[Vital step here, because the join uplink is sent when the device powers on.]</p>
+<p>Pat yourself on the back, hacker. You've finished the hard part. You can close the Putty window</p><br><b>Unplug the LT-22222-L
+[Vital step here, because the join uplink is sent when the device powers on.]</b></p>
 <br><br><h2>Using the Relay</h2>
   <ul>
     <li>
@@ -195,7 +193,7 @@ You can close the Putty window<p><br><br>Unplug the LT-22222-L
       Add a device using the AppEUI, DevEDUI, and APPKey provided with your LT-22222-L, <i>or that you hopefully just copied from Putty into a text app. Don't forget to delete all spaces in your Keys/EUIs.</i> (There is a pending state when adding the device and you will not see any data flow/joins/etc.during this period. Wait about 20 minutes to power it on)
     </li>
     <li>
-      Power on the device and scroll to the device Event Log at the bottom of the device’s page to confirm you got the Uplink, it should be nearly simultaneous with a downlink.<i>Welcome to the Helium network! You did it  :)</i>
+      Power on the device and scroll to the device Event Log at the bottom of the device’s page to confirm you got the Uplink, it should be nearly simultaneous with a downlink.<i> Welcome to the Helium network! You did it  :)</i>
     </li>
     <li>In a separate tab or window, go to <a href="https://datacake.co/" target="_blank">datacake.co</a>
     </li>
