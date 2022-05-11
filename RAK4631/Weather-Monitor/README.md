@@ -18,15 +18,15 @@
     <img src="images/arduino1.png" alt="" width="700px" height="auto">
     <p><b>Here are the things you'll need to modify:</b><br><br>Replace line 48 with:</p>
     
-      #define LORAWAN_DATERATE DR_3                   /*LoRaMac datarates definition, from DR_0 to DR_5*/
+      #define LORAWAN_DATERATE DR_3
     
    <p>Replace line 51 with:</p>
     
-     DeviceClass_t g_CurrentClass = CLASS_A;          /* class definition*/
+     DeviceClass_t g_CurrentClass = CLASS_A;
 
    <p>Replace line 52 with:</p>
       
-    LoRaMacRegion_t g_CurrentRegion = LORAMAC_REGION_US915;    /* Region:US915*/
+    LoRaMacRegion_t g_CurrentRegion = LORAMAC_REGION_US915;
       
    <p>Lines 73, 74, and 75 are to be filled in using the Euis/Keys you saved from Helium Console earlier. Only replace the blank areas indicated below:</p>
      
