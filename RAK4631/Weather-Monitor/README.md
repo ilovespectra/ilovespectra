@@ -10,7 +10,7 @@
     <P>First things first, head on over <a href="https://github.com/RAKWireless/WisBlock/tree/master/bootloader/RAK4630" target="_blank">here</a> to get your RAK4631 all setup with the latest bootloader. Next, proceed with the steps in 
       <a href="https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring" target="_blank">this walkthrough</a>. 
       It will help you physically assemble the weather sensor, as well as setup an IDE with the boards and libraries you'll need. I use Arduino IDE for this walkthrough.
-      Once you've got the monitor assembled and everything all set on Arduino IDE, you're ready to begin editing your code.
+      Once you've got the monitor assembled and everything all set on Arduino IDE, you're ready to begin editing your code. You can do so yourself using the following instructions, or skip to Using Preset Packages for an <a href="https://github.com/ilovespectra/ilovespectra/blob/main/RAK4631/Weather-Monitor/Weather-Monitor-US915.ino" target="_blank">Arduino sketch</a> preconstructed for the US915 band and the <a href="https://github.com/ilovespectra/ilovespectra/blob/main/RAK4631/Weather-Monitor/Datacake%20Decoder" target="_blank">Datacake Decoder</a>.
    <p>Head over to <a href="https://console.helium.com/" target="_blank">Helium Console</a> and setup an account if you 
       don't have one yet. Click "Add New Device" and enter a name for your Weather-Monitor.<br><br><img src="images/heliumadddevice.png" alt="" width="300px" height="auto"><br>Copy and paste your DevEui, AppEui, and AppKey into a text editing app and 
       save the file as something like "Weather Monitor Keys".<br><br><img src="images/heliumedeveui.png" alt="" width="500px" height="auto"><br><br> The Weather Monitor walkthrough above provides you with <a href="https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK4630/solutions/Weather_Monitoring/Weather_Monitoring.in" target="_blank">this Weather-Monitor Sketch</a>. Copy and paste that code into your Arduino IDE, it should look like this:</p>
@@ -35,7 +35,8 @@
     
  <p>It should look like this:</p>
 <img src="images/arduinomod.png" alt="" width="800px" height="auto">
-   <p>Click the check in the corner to verify, or compile, the sketch. You shouldn't receive any errors. If you do, simply use the debug at the bottom of the application to track down your typo.</p>     
+      <h3>Compile the Weather-Monitor Arduino Sketch</h3>
+      <p>Click the check in the corner to verify, or compile, the sketch. You shouldn't receive any errors. If you do, simply use the debug at the bottom of the application to track down your typo. Once your sketch is verified, click the arrow to Upload to your device and wait for it to finish programming.</p>     
 <br><h2>Configuring Datacake</h2>
     <p>We'll be using <a href="https://datacake.co/" target="_blank">Datacake.co</a> to read the data from our sensor. Head over and create an account if you don't have one already.</p>
     <p>Navigate to "Devices" and select "Add Device"</p><img src="images/datacakeadddevice.png" alt="" width="550px" height="auto"><br>Select "LoraWan" > "RAK Wisnode Starting Template" > "Helium"</p><br>
@@ -55,7 +56,13 @@ Navigate to Configuration and down to your Decoder. Scroll down to line 60 of yo
 
     return decoded;
 
-  <p>Place another '}' below, and hit enter again. It should look like this:</p><br><img src="images/datacakefunction.png" alt="" width="850px" height="auto">Then scroll down past your Decoder in your "Fields" to "Temperature" and select "Add Mapping Field"</p><br><img src="images/datacakeaddmap.png" alt="" width="900px" height="auto"><br>
+  <p>Place another '}' below, and hit enter again. It should look like this:</p><br><img src="images/datacakefunction.png" alt="" width="850px" height="auto">
+    <h3>Save the Decoder</h3>
+    <p>Once you've edited the decoder to include the function above, just hit save! All that's left now is <a href="https://github.com/ilovespectra/ilovespectra/edit/main/RAK4631/Weather-Monitor/README.md#setting-up-your-datacake-dashboard" target="_blank">Setting up your Datacake Dashboard</a>.</p>
+    <h2>Using Preset Packages</h2>
+    <p>Rather than editing the codes yourself, you can download the <a href="https://github.com/ilovespectra/ilovespectra/blob/main/RAK4631/Weather-Monitor/Weather-Monitor-US915.ino" target="_blank">Arduino sketch</a> and <a href="https://github.com/ilovespectra/ilovespectra/blob/main/RAK4631/Weather-Monitor/Datacake%20Decoder" target="_blank">Datacake Decoder</a>. Then you just have to  <a href="https://github.com/ilovespectra/ilovespectra/edit/main/RAK4631/Weather-Monitor/README.md#compile-the-weather-monitor-arduino-sketch" target="_blank">compile</a> and upload the arduino sketch to your weather monitor and proceed with the <a href="https://github.com/ilovespectra/ilovespectra/edit/main/RAK4631/Weather-Monitor/README.md#configuring-datacake" target="_blank">Datacake instructions</a> and pick back up  <a href="https://github.com/ilovespectra/ilovespectra/edit/main/RAK4631/Weather-Monitor/README.md#setting-up-your-datacake-dashboard" target="_blank">here</a>.</p>
+    <h3>Setting up your Datacake Dashboard</h3>
+    <p>Navigate to your Configuration window on your Datacake Dashboard, and scroll down past your Decoder in your "Fields" to "Temperature" and select "Add Mapping Field"</p><br><img src="images/datacakeaddmap.png" alt="" width="900px" height="auto"><br>
 <p>Enter the following information: "Type"- Float, "Name"- <i>any, ie. Temperature Fahrenheit</i>, "Source"- set 0 to 100, "Target"- set 32 to 212 </p><img src="images/datacakemapfield.png" alt="" width="500px" height="auto">
 <p>Now head over to your dashboard and toggle the edit switch in the right of "Permissions" and edit it however you like, this is my configuration. You can duplicate or add fields, and customize their data and appearence really easily. <i>Piece of Datacake!</i></p>
   <br><img src="images/datacakedash.png" alt="" width="900px" height="auto">
