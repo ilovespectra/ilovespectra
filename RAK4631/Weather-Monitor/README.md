@@ -5,7 +5,7 @@
   </head>
 
   <body>
-    <h2>RAK4631 Weather-Monitor <i>*Additional Help</i></h2>
+    <h2>RAK4631 Weather-Monitor <i>Additional Help</i></h2>
     <p><i>Information to help setup a weather monitor (US915) using the RAK4631 and the walkthrough provided by RAK.</i></p>
     <p>I wound up using a half a dozen sources to try to get this all setup. Hoping consolidating that data makes your life a little easier. I do not include the decoding for the light sensor, it was not needed for my application.</p>
     <P>First things first, head on over <a href="https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO/RAK4630" target="_blank">here</a> to get your RAK4631 all setup with the latest bootloader. Next, proceed with the steps in 
