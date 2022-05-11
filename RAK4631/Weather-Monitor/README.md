@@ -15,8 +15,7 @@
     <br><p><i>Welcome back</i></p>
     <p>Now you're ready to start setting things up. Head over to <a href="https://console.helium.com/" target="_blank">Helium Console</a> and setup an account if you 
       don't have one yet. Click "Add New Device" and enter a name for your Weather-Monitor.<br><br><img src="images/heliumadddevice.png" alt="" width="300px" height="auto"><br>Copy and paste your DevEui, AppEui, and AppKey into a text editing app and 
-      save the file as something like "Weather Monitor Keys".<br><br><img src="images/heliumedeveui.png" alt="" width="500px" height="auto"><br><br>You may have seen the Sketch File in the Weather Monitor walkthrough I provided above, it may have looked 
-      like total gibberish at the time, but we'll make a hacker out of you yet! Copy and paste that code into your Arduino IDE, it should look like this:</p>
+      save the file as something like "Weather Monitor Keys".<br><br><img src="images/heliumedeveui.png" alt="" width="500px" height="auto"><br><br> The Weather Monitor walkthrough above provides you with <a href="https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK4630/solutions/Weather_Monitoring/Weather_Monitoring.in" target="_blank">this Weather-Monitor Sketch</a>. Copy and paste that code into your Arduino IDE, it should look like this:</p>
     <img src="images/arduino1.png" alt="" width="700px" height="auto">
     <p><b>Here are the things you'll need to modify:</b><br><br>Replace line 48 with:</p>
     
