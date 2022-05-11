@@ -1,12 +1,12 @@
 /**
  * @file Weather_Monitoring.ino
  * @author rakwireless.com // Modified by @tanny#7241
- * @brief This sketch demonstrate reading a data from a weather station
- *    and send the data to lora gateway. It has been modified from its original version for use in the US915 band
+ * @brief This sketch demonstrates reading data from a weather station
+ *    using Helium. It has been modified from its original version for use in the US915 band
  * @version 0.1.1
  * @date 2022-05-11
  *
- * @copyright Copyright (c) 2020 / This modification is not copywritten, all rights belong to the original owner/publisher. I do not claim ownership or credit for this sketch.
+ * @copyright Copyright (c) 2020 / This modification [2022-05-11] is not copywritten, all rights belong to the original owner/publisher. I do not claim ownership or credit for this sketch.
  *
  * @note RAK4631 GPIO mapping to nRF52840 GPIO ports
    RAK4631    <->  nRF52840
