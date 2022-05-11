@@ -8,12 +8,11 @@
     <h2>RAK4631 Weather-Monitor <i>*Additional Help</i></h2>
     <p><i>Information to help setup a weather monitor (US915) using the RAK4631 and the walkthrough provided by RAK.</i></p>
     <p>I wound up using a half a dozen sources to try to get this all setup. Hoping consolidating that data makes your life a little easier. I do not include the decoding for the light sensor, it was not needed for my application.</p>
-    <P>First things first, be sure you've gone through the steps in 
+    <P>First things first, head on over <a href="https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO/RAK4630" target="_blank">here</a> to get your RAK4631 all setup with the latest bootloader. Next, proceed with the steps in 
       <a href="https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring" target="_blank">this walkthrough</a>. 
       It will help you physically assemble the weather sensor, as well as setup an IDE with the boards and libraries you'll need. I use Arduino IDE for this walkthrough.
-      Once you've got the monitor assembled and everything all set on Arduino IDE, head on over <a href="https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO/RAK4630" target="_blank">here</a> to get your RAK4631 all setup with the latest bootloader.</p>
-    <br><p><i>Welcome back</i></p>
-    <p>Now you're ready to start setting things up. Head over to <a href="https://console.helium.com/" target="_blank">Helium Console</a> and setup an account if you 
+      Once you've got the monitor assembled and everything all set on Arduino IDE, you're ready to begin editing your code.
+   <p>Head over to <a href="https://console.helium.com/" target="_blank">Helium Console</a> and setup an account if you 
       don't have one yet. Click "Add New Device" and enter a name for your Weather-Monitor.<br><br><img src="images/heliumadddevice.png" alt="" width="300px" height="auto"><br>Copy and paste your DevEui, AppEui, and AppKey into a text editing app and 
       save the file as something like "Weather Monitor Keys".<br><br><img src="images/heliumedeveui.png" alt="" width="500px" height="auto"><br><br> The Weather Monitor walkthrough above provides you with <a href="https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK4630/solutions/Weather_Monitoring/Weather_Monitoring.in" target="_blank">this Weather-Monitor Sketch</a>. Copy and paste that code into your Arduino IDE, it should look like this:</p>
     <img src="images/arduino1.png" alt="" width="700px" height="auto">
