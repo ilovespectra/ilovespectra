@@ -33,7 +33,7 @@
      uint8_t nodeAppEUI[8] = {0x__, 0x__,...};
      uint8_t nodeAppKey[16] = {0x__, 0x__,...};
     
- <p>It should look like this:</p>
+ <p>Lines 45-54 should look like this:</p>
 <img src="images/arduinomod.png" alt="" width="800px" height="auto">
       <h3>Compile the Weather-Monitor Arduino Sketch</h3>
       <p>Click the check in the corner to verify, or compile, the sketch. You shouldn't receive any errors. If you do, simply use the debug at the bottom of the application to track down your typo. Once your sketch is verified, click the arrow to Upload to your device and wait for it to finish programming.</p>     
