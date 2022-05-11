@@ -7,7 +7,7 @@
   <body>
     <h2>RAK4631 Weather-Monitor <i>Additional Help</i></h2>
     <p><i>Information to help setup a weather monitor (US915) using the RAK4631 and the walkthrough provided by RAK.</i></p>
-    <P>First things first, head on over <a href="https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO/RAK4630" target="_blank">here</a> to get your RAK4631 all setup with the latest bootloader. Next, proceed with the steps in 
+    <P>First things first, head on over <a href="https://github.com/RAKWireless/WisBlock/tree/master/bootloader/RAK4630" target="_blank">here</a> to get your RAK4631 all setup with the latest bootloader. Next, proceed with the steps in 
       <a href="https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring" target="_blank">this walkthrough</a>. 
       It will help you physically assemble the weather sensor, as well as setup an IDE with the boards and libraries you'll need. I use Arduino IDE for this walkthrough.
       Once you've got the monitor assembled and everything all set on Arduino IDE, you're ready to begin editing your code.
