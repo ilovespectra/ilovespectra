@@ -37,7 +37,7 @@
  <p>Lines 45-54 should look like this:</p>
 <img src="images/arduinomod.png" alt="" width="800px" height="auto">
       <h3>Compile the Weather-Monitor Arduino Sketch</h3>
-      <p>Click the check in the corner to verify, or compile, the sketch. You shouldn't receive any errors. If you do, simply use the debug at the bottom of the application to track down your typo. Once your sketch is verified, navigate to Tools > Board > and select WisBlock RAK4631. Plug in your device and select the correct port from the Tools menu, and click Compile. Simply click the arrow to Upload the sketch to your device and wait for it to finish programming.</p>     
+      <p>Click the check in the corner to verify, or compile, the sketch. You shouldn't receive any errors. If you do, simply use the debug at the bottom of the application to track down your typo. Once your sketch is verified, navigate to Tools > Board > and select WisBlock RAK4631. Plug in your device and select the correct port from the Tools menu. Simply click the arrow to Upload the sketch to your device and wait for it to finish programming.</p>     
 <br><h2>Configuring Datacake</h2>
     <p>We'll be using <a href="https://datacake.co/" target="_blank">Datacake.co</a> to read the data from our sensor. Head over and create an account if you don't have one already.</p>
     <p>Navigate to "Devices" and select "Add Device"</p><img src="images/datacakeadddevice.png" alt="" width="550px" height="auto"><br>Select "LoraWan" > "RAK Wisnode Starting Template" > "Helium"</p><br>
