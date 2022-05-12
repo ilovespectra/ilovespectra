@@ -41,7 +41,7 @@
     <p>We'll be using <a href="https://datacake.co/" target="_blank">Datacake.co</a> to read the data from our sensor. Head over and create an account if you don't have one already.</p>
     <p>Navigate to "Devices" and select "Add Device"</p><img src="images/datacakeadddevice.png" alt="" width="550px" height="auto"><br>Select "LoraWan" > "RAK Wisnode Starting Template" > "Helium"</p><br>
 <img src="images/datacakelora.png" alt="" width="500px" height="auto"><img src="images/datacakerak.png" alt="" width="500px" height="auto"><img src="images/datacakehelium.png" alt="" width="500px" height="auto">
-    <p>Then enter your Device EUI and click "Next"</p><br><img src="images/datacakedeveui.png" alt="" width="500px" height="auto"> 
+    <p>Then enter your Device EUI, give it a name, and click "Next".</p><br><img src="images/datacakedeveui.png" alt="" width="500px" height="auto"> 
 
 Navigate to Configuration and down to your Decoder. Scroll down to line 60 of your Decoder, replace it with '}' and hit enter. Paste the following function:
 
@@ -62,7 +62,7 @@ Navigate to Configuration and down to your Decoder. Scroll down to line 60 of yo
     <h2>Using Preset Packages</h2>
     <p>Rather than editing the codes yourself, you can use a <a href="https://github.com/ilovespectra/ilovespectra/blob/main/RAK4631/Weather-Monitor/Weather-Monitor-US915.ino" target="_blank">Arduino Sketch</a> that's been modified for US915, and the <a href="https://github.com/ilovespectra/ilovespectra/blob/main/RAK4631/Weather-Monitor/Datacake%20Decoder" target="_blank">Datacake Decoder</a>.</p><br><p>Simply copy the raw contents from the link for the 'Arduino Sketch' and paste it into Arduino IDE in order to enter your devices info. <b>You'll still need to add your OTAA DevEui, AppEui, and AppKey beginning in line 73 in the Arduino sketch.</b> Then you just have to verify the sketch and upload it to your weather monitor. Then copy the raw contents of the 'Datacake Decoder', navigate to your Configuration window on your Datacake console, scroll down to decoder and post the contents and hit save.</p>
     <h3>Setting up your Datacake Dashboard</h3>
-    <p>If you used the preset packages, follow the steps above to setup Datacake and return here after you add you Device. In your Configuration window on Datacake, scroll down past your Decoder in your "Fields" to "Temperature" and select "Add Mapping Field"</p><br><img src="images/datacakeaddmap.png" alt="" width="900px" height="auto"><br>
+    <p>If you used the preset packages, follow the steps above to setup Datacake and return here after you add your Device, . In your Configuration window on Datacake, scroll down past your Decoder in your "Fields" to "Temperature" and select "Add Mapping Field"</p><br><img src="images/datacakeaddmap.png" alt="" width="900px" height="auto"><br>
 <p>Enter the following information: "Type"- Float, "Name"- <i>any, ie. Temperature Fahrenheit</i>, "Source"- set 0 to 100, "Target"- set 32 to 212 </p><img src="images/datacakemapfield.png" alt="" width="500px" height="auto">
 <p>If this is your first time setting up a device between Helium Console and Datacake you'll need to configure the integration. Best to have both websites open in their own window to make flipping back and forth more streamlined. In your Helium Console, navigate to your 'Integrations' window and hit 'Add Integration', and select Datacake.</p>
   <img src="images/hcaddint.png" alt="" width="700px" height="auto"><br>
