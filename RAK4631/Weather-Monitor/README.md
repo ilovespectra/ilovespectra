@@ -90,7 +90,18 @@ Navigate to Configuration and down to your Decoder. Scroll down to line 60 of yo
   <p>Head back over to Helium Console and select the 'Flows' tab from the menu on the left hand side of the screen. Click the plus sign to add nodes, and drag your Datacake integration and your Weather Monitor to the board. <i>Connect the dots!</i> Just click and drag to add a line connecting the two. That's it, you're set.</p>
 <img src="images/hcflow.png" alt="" width="800px" height="auto"><br>
 <p>Now head back over to your dashboard one last time and toggle the edit switch in the right of "Permissions" and edit it however you like, this is my configuration. You can duplicate or add fields, and customize their data and appearence really easily. <i>Piece of Datacake!</i></p>
-  <br><img src="images/dcdash2.png" alt="" width="900px" height="auto">
+  <br><img src="images/dcdash3.png" alt="" width="900px" height="auto">
+  <br><b><ul>Now you've configured:</b><br>
+    <li> Your Weather Monitor sensor
+    </li>
+    <li> Your Helium Integration and Flow
+    </li>
+    <li> Your Datacake Decoder and Dashboard
+    </li>
+  </ul>
+  <p>You're ready for launch my friend. Fire her up!</p>
+  <p>Here's an example of what you should be seeing on the Helium Console side of things. Select your device and scroll all the way down to see the Event Log. Blue dots are an indication your integration is working. Red dots means the data from your node is dead ending somewhere, or the integration is otherwise failing. The Weather monitor is set by default to send an Uplink every 20 secconds. If you'd like to change the frequency, modify line 80 of the Arduino Sketch. (Currently '20000', 1000 = 1 second.)</p>
+  <br><img src="images/hclive.png" alt="" width="900px" height="auto">
   <p>Enjoy!</p>
     
   </body>
