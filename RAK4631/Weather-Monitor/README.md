@@ -78,7 +78,7 @@ Navigate to Configuration and down to your Decoder. Scroll down to line 60 of yo
   <img src="images/dcconfig.png" alt="" width="500px" height="auto"><br>
   <p>Navigate back to your Helium Console integration and paste the Uplink URL into 'Endpoint URL' field in the UPDATE YOUR CONNECTION DETAILS section.</p>
   <img src="images/hcendpointurl.png" alt="" width="600px" height="auto"><br>
-  <p>Copy your 'Downlink Key' to your clipboard, and Navigate back to Datacake and paste it into the correct field in the Datacake 'Network Server' window.</p>
+  <p>Copy your 'Downlink Key' to your clipboard, scroll down and click 'Update Details', Navigate back to Datacake, and paste it into the correct field in the Datacake 'Network Server' window.</p>
   <img src="images/hcdownlinkkey.png" alt="" width="600px" height="auto"><br>
   <p>Navigate to your Devices in Helium Console, select your weather monitor and copy the Device ID, scroll down and click 'Update Details'.</p>
   <img src="images/hcdevid.png" alt="" width="600px" height="auto"><br>
