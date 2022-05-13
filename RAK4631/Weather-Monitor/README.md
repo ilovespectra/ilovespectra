@@ -83,7 +83,7 @@ Navigate to Configuration and down to your Decoder. Scroll down to line 60 of yo
   <p>Navigate to your Devices in Helium Console, select your weather monitor and copy the Device ID, scroll down and click 'Update Details'.</p>
   <img src="images/hcdevid.png" alt="" width="600px" height="auto"><br>
   <p>Navigate back to Datacake and paste the Device ID in the correct field in the Datacake 'Network Server' window, and click 'Update'.</p>
-  <p>Head back over to Helium Console and select the 'Flows' tab from the menu on the left hand side of the screen. Click the plus sign to add nodes, and drag your Datacake integration and your Weather Monitor to the board. Connect the dots! Just click to add a line connecting the two. That's it, you're set.</p>
+  <p>Head back over to Helium Console and select the 'Flows' tab from the menu on the left hand side of the screen. Click the plus sign to add nodes, and drag your Datacake integration and your Weather Monitor to the board. <i>Connect the dots!</i> Just click to add a line connecting the two. That's it, you're set.</p>
 <img src="images/hcflow.png" alt="" width="800px" height="auto"><br>
 <p>Now head back over to your dashboard one last time and toggle the edit switch in the right of "Permissions" and edit it however you like, this is my configuration. You can duplicate or add fields, and customize their data and appearence really easily. <i>Piece of Datacake!</i></p>
   <br><img src="images/datacakedash.png" alt="" width="900px" height="auto">
