@@ -10,9 +10,7 @@ function Decoder(bytes, port) {
     var decoded = rakSensorDataDecode(hexString);
     
     // Extract Gateway Metadata
-    decoded.LORA_RSSI = (!!normalizedPayload.gateways && !!normalizedPayload.gateways[0] && normalizedPayload.gateways[0].rssi) || 0;
-    decoded.LORA_SNR = (!!normalizedPayload.gateways && !!normalizedPayload.gateways[0] && normalizedPayload.gateways[0].snr) || 0;
-    decoded.LORA_DATARATE = normalizedPayload.data_rate;    
+
     
     // Transform Lat + Long into location
     if (decoded.latitude) {
@@ -65,6 +63,9 @@ function Decoder(bytes, port) {
     decoded.humidity = (bytes[3] << 8 | (bytes[4])) / 100;
     decoded.pressure = (bytes[8] | (bytes[7] << 8) | (bytes[6] << 16) | (bytes[5] << 24)) / 100;
     decoded.light = bytes[12] | (bytes[11] << 8) | (bytes[10] << 16) | (bytes[9] << 24);
+    decoded.LORA_RSSI = (!!normalizedPayload.gateways && !!normalizedPayload.gateways[0] && normalizedPayload.gateways[0].rssi) || 0;
+    decoded.LORA_SNR = (!!normalizedPayload.gateways && !!normalizedPayload.gateways[0] && normalizedPayload.gateways[0].snr) || 0;
+    decoded.LORA_DATARATE = normalizedPayload.data_rate;    
 
     return decoded;
 }
