@@ -7,6 +7,7 @@
   <body>
     <h2>RAK4631 Weather-Monitor <i>Additional Help</i></h2>
     <p><i>Information to help setup a weather monitor (US915) using the RAK4631 and the walkthrough provided by RAK.</i></p>
+    <p><i>EDIT: 5/13/2022, correction to the preset Datacake Decoder to display LoRa data.</i></p>
     <p>First things first, head on over <a href="https://github.com/RAKWireless/WisBlock/tree/master/bootloader/RAK4630" target="_blank">here</a> to get your RAK4631 all setup with the latest bootloader. Next, proceed with the steps in <a href="https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index" target="_blank">this walkthrough</a> to setup RAK board support in Arduino IDE. Lastly, follow  
       <a href="https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring" target="_blank">this walkthrough</a>. 
       It will help you physically assemble the weather sensor and provide the last remaining software you'll need. You can stop when you reach this point of the walkthrough:</p><br><img src="images/stophere.png" alt="" width="1000px" height="auto"><br><p>I use Arduino IDE for this walkthrough as does the RAKWireless Weather Monitoring Solution walkthrough above.
@@ -54,10 +55,13 @@ Navigate to Configuration and down to your Decoder. Scroll down to line 60 of yo
     decoded.humidity = (bytes[3] << 8 | (bytes[4])) / 100;
     decoded.pressure = (bytes[8] | (bytes[7] << 8) | (bytes[6] << 16) | (bytes[5] << 24)) / 100;
     decoded.light = bytes[12] | (bytes[11] << 8) | (bytes[10] << 16) | (bytes[9] << 24);
+    decoded.LORA_RSSI = (!!normalizedPayload.gateways && !!normalizedPayload.gateways[0] && normalizedPayload.gateways[0].rssi) || 0;
+    decoded.LORA_SNR = (!!normalizedPayload.gateways && !!normalizedPayload.gateways[0] && normalizedPayload.gateways[0].snr) || 0;
+    decoded.LORA_DATARATE = normalizedPayload.data_rate;   
 
     return decoded;
 
-  <p>Place another '}' below, and hit enter again. It should look like this:</p><br><img src="images/datacakefunction.png" alt="" width="850px" height="auto">
+  <p>Place another '}' below, and hit enter again. It should look like this:</p><br><img src="images/dcfunction2.png" alt="" width="850px" height="auto">
     <h3>Save the Decoder</h3>
     <p>Once you've edited the decoder to include the function above, just hit save! Now you can proceed with Setting up your Datacake Dashboard below. </p>
     <h2>Using Preset Packages</h2>
@@ -86,9 +90,8 @@ Navigate to Configuration and down to your Decoder. Scroll down to line 60 of yo
   <p>Head back over to Helium Console and select the 'Flows' tab from the menu on the left hand side of the screen. Click the plus sign to add nodes, and drag your Datacake integration and your Weather Monitor to the board. <i>Connect the dots!</i> Just click and drag to add a line connecting the two. That's it, you're set.</p>
 <img src="images/hcflow.png" alt="" width="800px" height="auto"><br>
 <p>Now head back over to your dashboard one last time and toggle the edit switch in the right of "Permissions" and edit it however you like, this is my configuration. You can duplicate or add fields, and customize their data and appearence really easily. <i>Piece of Datacake!</i></p>
-  <br><img src="images/datacakedash.png" alt="" width="900px" height="auto">
+  <br><img src="images/dcdash2.png" alt="" width="900px" height="auto">
   <p>Enjoy!</p>
-  <p><i>(Edit: The LoRa data fields no longer appear to function after editing the code, but again I do not need the data. You'll need to troubleshoot that if you do.)</i></p>
     
   </body>
 
