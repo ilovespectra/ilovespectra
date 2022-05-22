@@ -100,7 +100,7 @@ Navigate to Configuration and down to your Decoder. Scroll down to line 60 of yo
     </li>
   </ul>
   <p>You're ready for launch my friend. Fire her up!</p>
-  <p>Here's an example of what you should be seeing on the Helium Console side of things. Select your device and scroll all the way down to see the Event Log. Blue dots are an indication your integration is working. Red dots means the data from your node is dead ending somewhere, or the integration is otherwise failing. The Weather monitor is set by default to send an Uplink every 20 secconds. If you'd like to change the frequency, modify line 80 of the Arduino Sketch. (Currently '20000', 1000 = 1 second.)</p>
+  <p>Here's an example of what you should be seeing on the Helium Console side of things. Select your device and scroll all the way down to see the Event Log. Blue dots are an indication your integration is working. Red dots means the data from your node is dead ending somewhere, or the integration is otherwise failing. The Weather monitor is set by default to send an Uplink every 20 seconds. If you'd like to change the frequency, modify line 80 of the Arduino Sketch. (Currently '20000', 1000 = 1 second.)</p>
   <br><img src="images/hclive.png" alt="" width="900px" height="auto">
   <p>Enjoy!</p>
     
