@@ -257,7 +257,7 @@ Flow Control: XON/XOFF<br>
       Run the ( - ) router wire from regulator to router
     <li>
       *OPTIONAL: analog voltage monitoring (battery voltage)
-      $nbsp <12” ~14-16 AWG wire from ( + ) battery input of controller to AVI1
+      Run <12” ~14-16 AWG wire from ( + ) battery input of controller to AVI1
     </li>
   </ul>
   <img src="images/splitters.png" alt="Diagram of the splitter configuration." width="650px" height="auto">
