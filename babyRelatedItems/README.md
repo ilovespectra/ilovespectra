@@ -8,8 +8,8 @@
 <p> Planning on building a few sensors that are all baby related, got a little girl otw. </p>
 </br>
 <h2> The idea </h2>
-<p> I'm making a pair of sensors for the car, one for the driver seat one for a car seat, if driver seat empty while baby seat occupied, push notifications sent to phone </p>
+<p> I'm making a pair of sensors for the car, one for the driver seat one for a car seat, if driver seat empty while baby seat occupied, push notifications sent to phone. tteague began to help me with that but I haven't started writing that code. </p>
 </br>
-<p> The one I'm having trouble with rn is just a simple environmental sensor to keep in the stroller on walks, if too hot or too cold, push notification sent </p>
+<p> I wanted to start with the 'easy one'. The one I'm having trouble with rn is just a simple environmental sensor to keep in the stroller on walks, if too hot or too cold, push notification sent </p>
 <p> simple stuff but i'm having trouble. i used this code on arduino before and it worked but I'm trying to migrate to VSC and trying to figure out what it is I'm missing here. thanks for any help folks.  <pp>
 
