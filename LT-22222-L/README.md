@@ -270,7 +270,7 @@ Flow Control: XON/XOFF<br>
   <p>The stock antenna did not cut it in my first deployment. If you were planning on placing your LT indoors, perhaps consider putting the LT in an outdoor enclosure instead, or running coax to an aftermarket antenna.</p>
   <p><i>When you do cable runs, think ‘teapot’- short, and stout. Thicker cable for antennas has better insulation against static accumulation, and thicker cable for electrical systems means less voltage drop.</i></p>
   <br>
-  <p><i>Eample of a custom enclosure by @tteague: </i></p>
+  <p><i>Example of a custom enclosure by @tteague: </i></p>
   <img src="images/enclosure.png" alt="Example of an enclosure for the LT by tteague." width="650px" height="auto">
   <p>The piece you'll need to upgrade the antenna is pictured below. it’s called “IPD/u.fl to N Type” You can also use the existing SMA out with an adapter. You’ll replace the pigtail on the board like a snap button on your pants, pop it off, snap it on.</p>
   <p><i>EDIT: The IPEX/u.fl cable I ordered did not fit the ufl board on the LT. The next easiest solution is to simply order an SMA adapter that matches your cable configuration. The SMA out on the LT is an SMA Female (Not reverse polarity, like on a RAK miner for example)</i></p>
