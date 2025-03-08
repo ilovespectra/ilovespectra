@@ -309,8 +309,8 @@ Flow Control: XON/XOFF<br>
   <p>Now you've got this incredible tool at your fingertips, if your internet has been down and needs a reboot, your miner could probably benefit from a power cycle refreshing the snapshot. So if your router is offline and unresponsive, or if your miner gets stuck, and is behind by 2000-2500 blocks or so, cowboy boot those babies! <i>Do not abuse the ability to power cycle your hardware, never do so more than once a day.</i><p>
 <p><i>EDIT: On May 11th, hotspots will no longer have to sync with the blockchain! </i>	&#127880; </p><br>
   <p>Thanks for sticking through this walkthrough. Hopefully it helps you, if you got stuck anywhere along the way or have any questions, I'm @tanny#7241 on Discord, and @iLoveSpectra on Twitter.</p><br><br><br>
-  <p>If you’re feeling grateful, my HNT wallet address is provided below:<p>
-  <h4>14fjXeSHN1t9f1TJLX5zWVC1P8iVPZ2M96Ke6iFDPwjkxvK3fZq</h4>
+  <p>If you’re feeling grateful, my SOL wallet address is provided below:<p>
+  <h4>Cj1jScR4V73qLmvWJiGiWs9jtcwCXEZsmS5cevWt9jNc</h4>
    <p align="center">
   <img src="images/qr.png" alt="tanny donation wallet qr code" width="250px" height="auto">
   <p><i>Hopefully you’ve reached the end of this walkthrough for the first time without having even ordered your LT-22222-L yet. If you haven't used the Helium network by creating applications on Helium Console for LoRaWAN sensors, there's no need to start with this I/O Relay. There are countless sensors with limitless applications that allow you to nitpick every element of the physical environment, almost anywhere. The steps <a href="https://github.com/ilovespectra/ilovespectra/tree/main/LT-22222-L#using-the-relay" target="_blank">Using the Relay</a> are the same for any node, just follow the bread crumbs from your makers. Every off-grid, or even every out-door enclosure period, should be equipped with a temperature/humitidy sensor. Electronics are prone to static under 30% humidity, and moisture issues over 50%. Tow that fine line and you'll extend the life of your hardware by years.</i></p>
